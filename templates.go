@@ -19,6 +19,8 @@ func init()  {
 	tmpl.Register("admin.login", BaseTmpl.Add("login.tmpl"))
 }
 
+tmpl.Render(w, r, "admin.login", tmpl.D{"key": "value"})
+
  */
 package template
 
